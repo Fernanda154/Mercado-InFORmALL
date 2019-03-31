@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seus produtos</title>
+	<link rel="stylesheet" type="text/css" href="css/telaDosGraficos.css">
+	<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+
+
+	<style type="text/css">
+		h1{
+			margin-left: 15px;
+		}
+		body{
+			background-color: bisque;
+		}
+		#header{
+			margin:0 auto;
+			width:1200px;
+			border:1px solid #ccc;
+			margin-top: 4px;
+			
+			background-color: #c5c5c5;
+			height: 280px;
+		}
+		img.prod{
+			height: 100px;
+			width: 115px;
+			border-radius: 3px;
+		}
+		.item_doce{
+			border-radius: 3px;
+			background-color: #ffa6fd;
+			height: 300px;
+			width: 200px;
+			padding-top: 15px;
+			padding-left: 3em;
+		}
+
+		.item_salgado{
+			border-radius: 3px;
+			background-color: #ffdc53;
+			height: 300px;
+			width: 200px;
+			padding-top: 15px;
+			padding-left: 3em;
+
+		}
+		.item_bebida{
+			border-radius: 3px;
+			background-color:#85c6fd;
+			height: 300px;
+			width: 200px;
+			padding-top: 15px;
+			padding-left: 3em;
+
+		}
+
+		
+
+	</style>
+
+</head>
+<body>
+	<header>
+		<div class="col-md-12">
+			<div class="col-md-3" > 
+				<h1>[LOGO]</h1>
+			</div>
+
+			<div class="col-md-7"> 
+				<h3 id="slogan">Tá com fome?</h3>
+				<input class="txt-busca" type="text" name="lanche" alt="Pede ai!"/>
+				<button  class="btn-busca" name="search">Buscar</button>
+			</div>
+
+			<div class="col-md-2" value="Logar">
+			<a class="log" href="login.html">
+			 <button class="btn-log">
+			 	
+			   <i class="far fa-user-circle usericon"></i>
+			  Logar
+			  </button>
+			  </a>
+			</div>
+		</div>
+	</header>
+
+	<h1 class="topo">Seus Produtos</h1>
+	<h1>Doces</h1>
+	<section id="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				  	<!--init my item-->
+				    <div class="item active">
+				      <div  class="salgados" style="width: 900px;height: 275px;padding-left: 150px;padding-top: 14px;display: flex;justify-content: space-between;">
+				      	<div class="item_doce">
+				      		<img class="prod" src="img/prod/doce">
+				      		<h4>Bombom</h4>
+				      		<p>preço:R$ 2,00</p>
+				      		<button class="btn btn-success"> comprar</button>
+
+				      	</div>
+				      	<div class="item_doce">
+				      		<img class="prod" src="img/prod/trufas.jpg">
+				      		<h4>Trufas</h4>
+				      		<p>preço:R$ 2,00</p>
+				      		<button class="btn btn-success"> comprar</button>
+				      	</div>
+				      	<div class="item_doce">
+				      		<img class="prod" src="img/prod/doce_goiaba.jpeg">
+				      		<h4>Doce de goiaba</h4>
+				      		<p>preço:R$ 2,00</p>
+				      		<button class="btn btn-success"> comprar</button>
+				      	</div>
+
+
+				      </div>
+				      <div class="carousel-caption">
+				      	
+				      
+				      </div>
+				    </div>
+				    <!--end my item-->
+
+				    <!--init my item-->
+				    <div class="item">
+				    	<div  style="width: 900px;height: 275px;padding-left: 150px;padding-top: 14px; display: flex;justify-content: space-between;">
+					    	<div class="item_doce">
+					    		  <img class="prod" src="img/prod/pirulito.jpg" alt="...">
+					    		  <h4>Pirulito</h4>
+				      			  <p>preço:R$ 2,00</p>
+				      			  <button class="btn btn-success"> comprar</button>
+					    	</div>
+					    	<div class="item_doce">
+					    		  <img class="prod" src="img/prod/jujubas.jpg" alt="...">
+					    		  <h4>Jujubas</h4>
+				      			  <p>preço:R$ 2,00</p>
+				      			  <button class="btn btn-success"> comprar</button>
+					    	</div>
+					    	<div class="item_doce">
+					    		  <img  class="prod" src="img/prod/geleia.jpg" alt="...">
+					    		  <h4>Geleias</h4>
+				      			  <p>preço:R$ 2,00</p>
+				      			  <button class="btn btn-success"> comprar</button>
+					    	</div>
+				    	</div>
+				    
+				      <div class="carousel-caption">
+				        
+				      </div>
+				    </div>
+				     <!--end my item-->
+				   
+				    <!--init my item-->
+				    <div class="item">
+				    	<div  style="width: 900px;height: 275px;padding-left: 150px;padding-top: 14px; display: flex;justify-content: space-between;">
+					    	<div class="item_doce">
+					    		  <img class="prod" src="img/prod/mousse.jpeg" alt="...">
+					    		  <h4>Mousse</h4>
+				      			  <p>preço:R$ 2,00</p>
+				      			  <button class="btn btn-success"> comprar</button>
+					    	</div>
+					    	<div class="item_doce">
+					      		<img  class="prod" src="img/prod/pudim.jpeg">
+					      		<h4>Pudim</h4>
+					      		<p>preço:R$ 2,00</p>
+					      		<button class="btn btn-success"> comprar</button>
+				      		</div>
+				      	<div class="item_doce">
+				      		<img class="prod" src="img/prod/bolo.jpeg">
+				      		<h4>Bolo de pote</h4>
+				      		<p>preço:R$ 2,00</p>
+				      		<button class="btn btn-success"> comprar</button>
+				      	</div>
+				    	</div>
+				      <div class="carousel-caption">
+				        
+				      </div>
+				    </div>
+				     <!--end my item-->
+				  
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<h1>Salgados</h1>
+	<section id="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				  	<!--init my item-->
+				    <div class="item active">
+				      <div  class="salgados" style="width: 900px;height: 275px;padding-left: 150px;padding-top: 14px;display: flex;justify-content: space-between;">
+				      	<div class="item_salgado">
+				      		<img class="prod" src="img/prod/coxinha.jpeg">
+				      		<h4>Coxinha de frango</h4>
+				      		<p>preço:R$ 2,00</p>
+				      		<button class="btn btn-success"> comprar</button>
+
+				      	</div>
+				      	<div class="item_salgado">
+				      		<img class="prod" src="img/prod/pastel.jpeg">
+				      		<h4>Pastel variados</h4>
+				      		<p>preço:R$ 2,00</p>
+				      		<button class="btn btn-success"> comprar</button>
+				      	</div>
+				      	<div class="item_salgado">
+				      		<img class="prod" src="img/prod/empada.jpeg">
+				      		<h4>Empada de frango</h4>
+				      		<p>preço:R$ 2,00</p>
+				      		<button class="btn btn-success"> comprar</button>
+				      	</div>
+
+
+				      </div>
+				      <div class="carousel-caption">
+				      	
+				      
+				      </div>
+				    </div>
+				    <!--end my item-->
+
+				    <!--init my item-->
+				    <div class="item">
+				    	<div  style="width: 900px;height: 275px;padding-left: 150px;padding-top: 14px; display: flex;justify-content: space-between;">
+					    	<div class="item_salgado">
+					    		  <img class="prod" src="img/prod/pizzas.jpeg" alt="...">
+					    		  <h4>Mini pizzas</h4>
+				      			  <p>preço:R$ 3,00</p>
+				      			  <button class="btn btn-success"> comprar</button>
+					    	</div>
+					    	<div class="item_salgado">
+					    		  <img class="prod" src="img/prod/folhado.jpeg" alt="...">
+					    		  <h4>folhado de frango</h4>
+				      			  <p>preço:R$ 2,50</p>
+				      			  <button class="btn btn-success"> comprar</button>
+					    	</div>
+					    	<div class="item_salgado">
+					    		  <img class="prod" src="img/prod/enroladinho.jpeg" alt="...">
+					    		  <h4>enroladinho</h4>
+				      			  <p>preço:R$ 1,50</p>
+				      			  <button class="btn btn-success"> comprar</button>
+					    	</div>
+				    	</div>
+				    
+				      <div class="carousel-caption">
+				        
+				      </div>
+				    </div>
+				     <!--end my item-->
+				   
+				    <!--init my item-->
+				    <div class="item">
+				    	<div  style="width: 900px;height: 275px;padding-left: 150px;padding-top: 14px; display: flex;justify-content: space-between;">
+					    	<div class="item_salgado">
+					    		  <img class="prod" src="img/prod/torta.jpeg" alt="...">
+					    		  <h4>Torta salgada</h4>
+				      			  <p>preço:R$ 2,00</p>
+				      			  <button class="btn btn-success"> comprar</button>
+					    	</div>
+					    	<div class="item_salgado">
+					      		<img  class="prod" src="img/prod/empadav.jpeg">
+					      		<h4>Empada vegetariana</h4>
+					      		<p>preço:R$ 2,00</p>
+					      		<button class="btn btn-success"> comprar</button>
+				      		</div>
+				      	<div class="item_salgado">
+				      		<img class="prod" src="img/prod/pastelq.jpeg">
+				      		<h4>pastel de queijo</h4>
+				      		<p>preço:R$ 2,00</p>
+				      		<button class="btn btn-success"> comprar</button>
+				      	</div>
+				    	</div>
+				      <div class="carousel-caption">
+				        
+				      </div>
+				    </div>
+				     <!--end my item-->
+				  
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+
+
+
+	<h1>Bebidas</h1>
+	<section id="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic3" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic3" data-slide-to="2"></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				  	<!--init my item-->
+				    <div class="item active">
+				      <div  class="salgados" style="width: 900px;height: 275px;padding-left: 150px;padding-top: 14px;display: flex;justify-content: space-between;">
+				      	<div class="item_bebida">
+				      		<img class="prod" src="img/prod/suco.jpeg">
+				      		<h4>Sucos</h4>
+				      		<p>preço:R$ 1,00</p>
+				      		<button class="btn btn-success"> comprar</button>
+
+				      	</div>
+				      	<div class="item_bebida">
+				      		<img class="prod" src="img/prod/vitamina.jpeg">
+				      		<h4>Vitaminas naturais</h4>
+				      		<p>preço:R$ 2,00</p>
+				      		<button class="btn btn-success"> comprar</button>
+				      	</div>
+				      	<div class="item_bebida">
+				      		<img class="prod" src="img/prod/cafe.jpeg">
+				      		<h4>Café (com ou sem leite)</h4>
+				      		<p>preço:R$ 1,00</p>
+				      		<button class="btn btn-success"> comprar</button>
+				      	</div>
+
+
+				      </div>
+				      <div class="carousel-caption">
+				      	
+				      
+				      </div>
+				    </div>
+				    <!--end my item-->
+
+				    <!--init my item-->
+				    <div class="item">
+				    	<div  style="width: 900px;height: 275px;padding-left: 150px;padding-top: 14px; display: flex;justify-content: space-between;">
+					    	<div class="item_bebida">
+					    		  <img class="prod"  src="img/prod/refri.jpeg" alt="...">
+					    		  <h4>Refrigerante</h4>
+				      			  <p>preço:R$ 1,50</p>
+				      			  <button class="btn btn-success"> comprar</button>
+					    	</div>
+					    	<div class="item_bebida">
+					    		  <img class="prod" src="img/prod/sucoc.jpeg" alt="...">
+					    		  <h4>Suco de frutas citricas</h4>
+				      			  <p>preço:R$ 1,00</p>
+				      			  <button class="btn btn-success"> comprar</button>
+					    	</div>
+					    	<div class="item_bebida">
+					    		  <img class="prod" src="img/prod/amineral.jpeg" alt="...">
+					    		  <h4>Água mineral</h4>
+				      			  <p>preço:R$ 1,00</p>
+				      			  <button class="btn btn-success"> comprar</button>
+					    	</div>
+				    	</div>
+				    
+				      <div class="carousel-caption">
+				        
+				      </div>
+				    </div>
+				     <!--end my item-->
+				   
+				    <!--init my item-->
+				    <div class="item">
+				    	<div  style="width: 900px;height: 275px;padding-left: 150px;padding-top: 14px; display: flex;justify-content: space-between;">
+					    	<div class="item_bebida">
+					    		  <img class="prod" src="img/prod/cha.jpeg" alt="...">
+					    		  <h4>Chá</h4>
+				      			  <p>preço:R$ 2,00</p>
+				      			  <button class="btn btn-success"> comprar</button>
+					    	</div>
+					    	<div class="item_bebida">
+					      		<img class="prod" src="img/prod/limonada.jpeg">
+					      		<h4>Limonada</h4>
+					      		<p>preço:R$ 2,00</p>
+					      		<button class="btn btn-success"> comprar</button>
+				      		</div>
+				      	<div class="item_bebida">
+				      		<img class="prod" src="img/prod/acgas.jpeg">
+				      		<h4>Água com gás</h4>
+				      		<p>preço:R$ 2,00</p>
+				      		<button class="btn btn-success"> comprar</button>
+				      	</div>
+				    	</div>
+				      <div class="carousel-caption">
+				        
+				      </div>
+				    </div>
+				     <!--end my item-->
+				  
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<h1 class="topo">Dados das vendas</h1>
+	<h1>Doces</h2>
+	<img src="img/grafico1.png" class="grafico">
+	<h1>Salgados</h2>
+	<img src="img/grafico2.png" class="grafico">
+	<footer> 
+	<img src="img/ins.png" class="primeira icon" alt="ícone do instagram">
+	<img src="img/face.png" class="icon" alt="ícone do facebook">
+	<img src="img/tw.png"  class="icon" alt="ícone do twiter">
+	<img src="img/tel.png"  class="icon" alt="ícone do facebook">
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Mercado InFORmALL</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+ 	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+ 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <style type="text/css">
+    html, body {
+   
+    }
+
+    * {
+     font-family: 'Amatic SC', cursive;
+     font-size: 30px;
+    }
+
+    .slider {
+        width: 90%;
+
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+    .center{
+    	margin-top:0;
+    }
+body{
+  padding: 0;
+  margin: 0;
+  background-color: bisque;
+}
+
+header{
+
+  background:#B22222;
+  height: 150px;
+  width: 100%;
+  padding-top:25px;
+  padding-bottom: 15px;
+}
+.grafico{
+  margin-left: 20%;
+  height: 200px;
+  width: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.topo{
+  margin: 50px;
+  text-align: center;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+img.icon{
+  height: 60px;
+  width: 60px;
+  margin-left: 80px;
+}
+a{
+  text-decoration: none;
+}
+img.logo{
+  margin-top: 0;
+  height: 100px;
+  width: auto;
+}
+
+#slogan{
+
+  margin-left: 7.5em;
+  color:white;
+  font-size: 30px
+}
+.log{
+ color:white;
+ font-size: 16px;
+
+}
+.log:hover{
+ color:white;
+ text-decoration: none
+}
+.btn-busca{
+
+  border:none;
+  height:40px;
+  border-radius:0 7px 7px 0;
+  width:70px;
+  font-weight:bold;
+  background:orange;
+  display: flex;
+}
+.txt-busca{
+  
+  background-color:white;
+  padding-left:5px; 
+  font-size:18px;
+  border:none;
+  height:40px;
+  width:350px;
+  border-radius: 7px 0 0 7px;
+  display: inline-block;
+  margin-left: 85px;
+}
+
+.btn-log{
+  border:none;
+  background:#B22222;
+  width: 100px;
+  height: 50px;
+
+
+}
+
+
+.usericon{
+  font-size: 3em;
+  color:white;
+}
+
+.carrosel_title{
+text-align: center;
+margin-bottom: 0px;
+color:white;
+}
+
+.box_carrosel_title_1 img{
+  height: 20px;
+}
+.destaque{
+padding-top: 10px;
+width: 300px;
+
+}
+.box_carrosel_title_1{
+	background-color: orange;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 5%;
+  display: inline-block;
+}
+
+
+.box_carrosel_title_2{
+	background-color:pink ;
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 5%
+}
+figcaption{
+  font-size: 15px;
+  text-align: center;
+}
+.preco{
+  font-size: 14px;
+  text-align: center;
+}
+.comprar{
+  margin-left: 23%;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #B22222;
+  color: white;
+
+}
+.inicio{
+  display: flex;
+  width: 60%;
+  height: 50%;
+  margin-left: 18%;
+  margin-top: 7%;
+  margin-bottom: 15%;
+}
+.icones{
+  display: inline-block;
+  width: 30%;
+  height: 50%;
+
+}
+.icones:hover{
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.icones img{
+  width: 165px;
+  height: 168px;
+  margin: 30px;
+  
+}
+
+.leg{
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+}
+.{
+  background-color: #FFEBCD;
+  border-radius: 60%;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 5px 5px black;
+}
+
+
+  </style>
+
+
+
+
+</head>
+<body style="background-color: bisque;">
+	<header>
+			<div class="col-md-3">
+        
+      </div>
+
+			<div class="col-md-7" > 
+				<h3 id="slogan"><b>Tá com fome?</b> </h3>
+				<input class="txt-busca" type="text" placeholder="Trufas, pastel, ..." name="lanche" alt="Pede ai!"/>
+				<button  class="btn-busca" name="search">Buscar</button>
+			</div>
+
+			<div class="col-md-2" value="Logar">
+			<a class="log" href="login.html">
+			 <button class="btn-log">
+			 	
+			   <i class="far fa-user-circle usericon"></i>
+			     <b style="font-size: 30px">Logar</b> 
+			  </button>
+			  </a>
+			</div>
+		</div>
+	</header>
+  <section class="iconesCaminhos">
+    <div class="inicio">
+      
+        <a  href="#salgados" onclick="go('#salgados');">
+          <figure class="icones">
+            <div class="fundo">
+              <img src="img/icones/iconeSagados.png">
+            </div>
+            <figcaption class="leg" style="margin-left: 60px;">SALGADOS</figcaption>
+          </figure>
+        </a>
+      
+      <a  href="#salgados" onclick="go('#salgados');">
+        <figure class="icones" style="margin-left: 25%;">
+          <div class="fundo">
+            <img src="img/icones/iconeDocepng.png">
+          </div>
+          <figcaption class="leg" style="margin-left: 83px;">DOCES </figcaption>
+        </figure>
+      </a>
+      <a  href="#salgados" onclick="go('#salgados');">
+        <figure class="icones" style="margin-left: 50%;">
+          <div class="fundo">
+            <img src="img/icones/iconeBebida.png">
+          </div>
+          <figcaption class="leg" style="margin-left: 83px;">BEBIDAS</figcaption>
+        </figure>
+      </a>
+    </div>
+    
+  </section>
+
+	<div id="salgados" class="box_carrosel_title_1"><img src="img/icones/iconeSagados.png" style="display: inline-block;"><h3 class="carrosel_title" style="display: inline-block;">Salgados</h3></div>
+
+    <section class="center slider">
+      <div>
+        <figure>
+          <img src="img/salgados/pastel.jpg" class="imgCarrosel">
+          <figcaption>PASTEL</figcaption>
+        </figure>
+        <p class="preco">2,00R$</p>
+        <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+      <div>
+      <figure>
+        <img src="img/salgados/coxinha.jpg" class="imgCarrosel">
+        <figcaption>COXINHA</figcaption>
+      </figure>
+        <p class="preco">2,50,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+      <div>
+        <figure>
+          <img src="img/salgados/esfirra.jpg" class="imgCarrosel">
+        <figcaption>ESFIRRA</figcaption>
+        </figure>
+        <p class="preco">4,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+      <div>
+        <figure>
+          <img src="img/salgados/esfirra2.jpg" class="imgCarrosel">
+        <figcaption>ESFIRRA<figcaption>
+        </figure>
+        <p class="preco">2,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+      <div>
+        <figure>
+          <img src="img/salgados/empada.jfif" class="imgCarrosel">
+        <figcaption>EMPADA</figcaption>
+        </figure>
+        <p class="preco">3,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+      <div>
+        <figure>
+          <img src="img/salgados/coisaComQueijo.jpg" class="imgCarrosel">
+          <figcaption>EMPADA</figcaption>
+        </figure>
+        <p class="preco">5,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+      <div>
+        <figure>
+          <img src="img/salgados/salgadoNovo.jpg" class="imgCarrosel">
+          <figcaption>SALGADO</figcaption>
+        </figure>
+        <p class="preco">20,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+    </section>
+	<div class="box_carrosel_title_2" id="doces"><h3 class="carrosel_title">Doces</h3></div>
+
+    <section class="center slider">
+      <div>
+        <figure>
+          <img src="img/doces/bagana.jpg">
+          <figcaption>BAGANA</figcaption>
+        </figure>
+        <p class="preco">20,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+      <div>
+      <figure>
+        <img src="img/doces/brigadeiro.png">
+        <figcaption>BRIGADEIRO</figcaption>
+      </figure>
+        <p class="preco">20,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+      <div>
+        <figure>
+          <img src="img/doces/churros.jpg">
+        <figcaption>CHURROS</figcaption>
+        </figure>
+        <p class="preco">20,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+      <div>
+        <figure>
+          <img src="img/ins.png">
+        <figcaption>TRUFA DE UVA</figcaption>
+        </figure>
+        <p class="preco">20,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+      <div>
+        <figure>
+          <img src="img/tw.png">
+        <figcaption>TRUFA DE UVA</figcaption>
+        </figure>
+        <p class="preco">20,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+      <div>
+        <figure>
+          <img src="img/ins.png">
+          <figcaption>TRUFA DE UVA</figcaption>
+        </figure>
+        <p class="preco">20,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+      <div>
+        <figure>
+          <img src="img/tw.png">
+          <figcaption>TRUFA DE UVA</figcaption>
+        </figure>
+        <p class="preco">20,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+      <div>
+        <figure>
+          <img src="img/ins.png">
+          <figcaption>TRUFA DE UVA</figcaption>
+        </figure>
+        <p class="preco">20,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+      <div>
+        <figure>
+          <img src="img/tw.png">
+          <figcaption>TRUFA DE UVA</figcaption>
+        </figure>
+        <p class="preco">20,00R$</p>
+         <a href="confirmarCompra.html"><button class="comprar">Comprar</button></a>
+      </div>
+    </section>
+
+
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+ 	<script type="text/javascript">
+   		$(document).on('ready', function() {
+      
+     	$(".center").slick({
+        	dots: true,
+        	infinite: true,
+        	centerMode: true,
+       		slidesToShow: 5,
+        	slidesToScroll: 3
+      });
+    });
+</script>
+
+</body>
+</html>
